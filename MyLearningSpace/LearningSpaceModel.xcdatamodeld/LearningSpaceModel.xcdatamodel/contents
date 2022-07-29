@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Goals" representedClassName="Goals" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="objectives" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Objectives" inverseName="goal" inverseEntity="Objectives"/>
+    </entity>
+    <entity name="Objectives" representedClassName="Objectives" syncable="YES">
+        <attribute name="goalID" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status1" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status2" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status3" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status4" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="goal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goals" inverseName="objectives" inverseEntity="Goals"/>
+        <relationship name="question" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="objective" inverseEntity="Question"/>
+        <relationship name="resource" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resource" inverseName="objective" inverseEntity="Resource"/>
+    </entity>
+    <entity name="PathCategory" representedClassName="PathCategory" syncable="YES">
+        <attribute name="currProgress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="maxProgress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pathNameID" optional="YES" attributeType="String"/>
+        <relationship name="pathname" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PathName" inverseName="pathcategory" inverseEntity="PathName"/>
+    </entity>
+    <entity name="PathName" representedClassName="PathName" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="pathcategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PathCategory" inverseName="pathname" inverseEntity="PathCategory"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="choice1" optional="YES" attributeType="String"/>
+        <attribute name="choice2" optional="YES" attributeType="String"/>
+        <attribute name="choice3" optional="YES" attributeType="String"/>
+        <attribute name="choice4" optional="YES" attributeType="String"/>
+        <attribute name="objectiveID" optional="YES" attributeType="String"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <relationship name="objective" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Objectives" inverseName="question" inverseEntity="Objectives"/>
+    </entity>
+    <entity name="Resource" representedClassName="Resource" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="objectiveID" optional="YES" attributeType="String"/>
+        <relationship name="objective" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Objectives" inverseName="resource" inverseEntity="Objectives"/>
+    </entity>
+    <elements>
+        <element name="Goals" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Objectives" positionX="-54" positionY="18" width="128" height="179"/>
+        <element name="PathCategory" positionX="18" positionY="135" width="128" height="119"/>
+        <element name="PathName" positionX="0" positionY="126" width="128" height="74"/>
+        <element name="Question" positionX="-18" positionY="81" width="128" height="164"/>
+        <element name="Resource" positionX="-36" positionY="72" width="128" height="74"/>
+    </elements>
+</model>

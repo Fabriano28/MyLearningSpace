@@ -7,18 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B31134B2891485B004531D9 /* PathProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31134A2891485B004531D9 /* PathProgressView.swift */; };
+		6B31134D28914897004531D9 /* PathProgressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31134C28914897004531D9 /* PathProgressItem.swift */; };
+		6B31135528914914004531D9 /* PathProgressRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31135428914914004531D9 /* PathProgressRow.swift */; };
+		6B3113572891494A004531D9 /* StrandSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113562891494A004531D9 /* StrandSelectionView.swift */; };
+		6B31135928914955004531D9 /* StrandSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31135828914955004531D9 /* StrandSelectionRow.swift */; };
+		6B31135B28914969004531D9 /* LearningSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31135A28914969004531D9 /* LearningSpaceView.swift */; };
+		6B31135D2891498C004531D9 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31135C2891498C004531D9 /* ResourcesView.swift */; };
+		6B31135F2891499B004531D9 /* AssesmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31135E2891499B004531D9 /* AssesmentView.swift */; };
+		6B31136228914A23004531D9 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = 6B31136128914A23004531D9 /* HalfASheet */; };
+		6B31136428914ABD004531D9 /* LODetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31136328914ABD004531D9 /* LODetailSheetView.swift */; };
+		6B31138A2891B3D3004531D9 /* PathCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31137E2891B3D3004531D9 /* PathCategory+CoreDataClass.swift */; };
+		6B31138B2891B3D3004531D9 /* PathCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31137F2891B3D3004531D9 /* PathCategory+CoreDataProperties.swift */; };
+		6B31138C2891B3D3004531D9 /* Resource+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113802891B3D3004531D9 /* Resource+CoreDataClass.swift */; };
+		6B31138D2891B3D3004531D9 /* Resource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113812891B3D3004531D9 /* Resource+CoreDataProperties.swift */; };
+		6B31138E2891B3D3004531D9 /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113822891B3D3004531D9 /* Question+CoreDataClass.swift */; };
+		6B31138F2891B3D3004531D9 /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113832891B3D3004531D9 /* Question+CoreDataProperties.swift */; };
+		6B3113902891B3D3004531D9 /* PathName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113842891B3D3004531D9 /* PathName+CoreDataClass.swift */; };
+		6B3113912891B3D3004531D9 /* PathName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113852891B3D3004531D9 /* PathName+CoreDataProperties.swift */; };
+		6B3113922891B3D3004531D9 /* Goals+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113862891B3D3004531D9 /* Goals+CoreDataClass.swift */; };
+		6B3113932891B3D3004531D9 /* Goals+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113872891B3D3004531D9 /* Goals+CoreDataProperties.swift */; };
+		6B3113942891B3D3004531D9 /* Objectives+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113882891B3D3004531D9 /* Objectives+CoreDataClass.swift */; };
+		6B3113952891B3D3004531D9 /* Objectives+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113892891B3D3004531D9 /* Objectives+CoreDataProperties.swift */; };
+		6B3113972892F33E004531D9 /* LGDetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3113962892F33E004531D9 /* LGDetailSheetView.swift */; };
+		6B31139A2893A2E2004531D9 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 6B3113992893A2E2004531D9 /* WrappingHStack */; };
 		6B9987F92891208200720EC6 /* MyLearningSpaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9987F82891208200720EC6 /* MyLearningSpaceApp.swift */; };
 		6B9987FB2891208200720EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9987FA2891208200720EC6 /* ContentView.swift */; };
 		6B9987FD2891208300720EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B9987FC2891208300720EC6 /* Assets.xcassets */; };
 		6B9988002891208300720EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B9987FF2891208300720EC6 /* Preview Assets.xcassets */; };
+		6B99880828912C9100720EC6 /* LearningSpaceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B99880628912C9100720EC6 /* LearningSpaceModel.xcdatamodeld */; };
+		6B99880A28912EC200720EC6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B99880928912EC200720EC6 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B31134A2891485B004531D9 /* PathProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathProgressView.swift; sourceTree = "<group>"; };
+		6B31134C28914897004531D9 /* PathProgressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathProgressItem.swift; sourceTree = "<group>"; };
+		6B31135428914914004531D9 /* PathProgressRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathProgressRow.swift; sourceTree = "<group>"; };
+		6B3113562891494A004531D9 /* StrandSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrandSelectionView.swift; sourceTree = "<group>"; };
+		6B31135828914955004531D9 /* StrandSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrandSelectionRow.swift; sourceTree = "<group>"; };
+		6B31135A28914969004531D9 /* LearningSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSpaceView.swift; sourceTree = "<group>"; };
+		6B31135C2891498C004531D9 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		6B31135E2891499B004531D9 /* AssesmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentView.swift; sourceTree = "<group>"; };
+		6B31136328914ABD004531D9 /* LODetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LODetailSheetView.swift; sourceTree = "<group>"; };
+		6B31137E2891B3D3004531D9 /* PathCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PathCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B31137F2891B3D3004531D9 /* PathCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PathCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113802891B3D3004531D9 /* Resource+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B3113812891B3D3004531D9 /* Resource+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113822891B3D3004531D9 /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B3113832891B3D3004531D9 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113842891B3D3004531D9 /* PathName+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PathName+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B3113852891B3D3004531D9 /* PathName+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PathName+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113862891B3D3004531D9 /* Goals+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B3113872891B3D3004531D9 /* Goals+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113882891B3D3004531D9 /* Objectives+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objectives+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B3113892891B3D3004531D9 /* Objectives+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objectives+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B3113962892F33E004531D9 /* LGDetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGDetailSheetView.swift; sourceTree = "<group>"; };
 		6B9987F52891208200720EC6 /* MyLearningSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLearningSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9987F82891208200720EC6 /* MyLearningSpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLearningSpaceApp.swift; sourceTree = "<group>"; };
 		6B9987FA2891208200720EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B9987FC2891208300720EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B9987FF2891208300720EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B99880728912C9100720EC6 /* LearningSpaceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearningSpaceModel.xcdatamodel; sourceTree = "<group>"; };
+		6B99880928912EC200720EC6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +76,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B31139A2893A2E2004531D9 /* WrappingHStack in Frameworks */,
+				6B31136228914A23004531D9 /* HalfASheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B311347289147F5004531D9 /* PathProgress */ = {
+			isa = PBXGroup;
+			children = (
+				6B31134A2891485B004531D9 /* PathProgressView.swift */,
+				6B31134C28914897004531D9 /* PathProgressItem.swift */,
+				6B31135428914914004531D9 /* PathProgressRow.swift */,
+			);
+			path = PathProgress;
+			sourceTree = "<group>";
+		};
+		6B31134E289148A9004531D9 /* StrandSelection */ = {
+			isa = PBXGroup;
+			children = (
+				6B3113562891494A004531D9 /* StrandSelectionView.swift */,
+				6B31135828914955004531D9 /* StrandSelectionRow.swift */,
+			);
+			path = StrandSelection;
+			sourceTree = "<group>";
+		};
+		6B31134F289148B3004531D9 /* LearningSpace */ = {
+			isa = PBXGroup;
+			children = (
+				6B31135A28914969004531D9 /* LearningSpaceView.swift */,
+			);
+			path = LearningSpace;
+			sourceTree = "<group>";
+		};
+		6B311350289148BF004531D9 /* LODetail */ = {
+			isa = PBXGroup;
+			children = (
+				6B31136328914ABD004531D9 /* LODetailSheetView.swift */,
+			);
+			path = LODetail;
+			sourceTree = "<group>";
+		};
+		6B311351289148D8004531D9 /* LGDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6B3113962892F33E004531D9 /* LGDetailSheetView.swift */,
+			);
+			path = LGDetail;
+			sourceTree = "<group>";
+		};
+		6B311352289148DE004531D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B31135C2891498C004531D9 /* ResourcesView.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B311353289148F4004531D9 /* Assesment */ = {
+			isa = PBXGroup;
+			children = (
+				6B31135E2891499B004531D9 /* AssesmentView.swift */,
+			);
+			path = Assesment;
+			sourceTree = "<group>";
+		};
+		6B31137528919633004531D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B31137E2891B3D3004531D9 /* PathCategory+CoreDataClass.swift */,
+				6B31137F2891B3D3004531D9 /* PathCategory+CoreDataProperties.swift */,
+				6B3113802891B3D3004531D9 /* Resource+CoreDataClass.swift */,
+				6B3113812891B3D3004531D9 /* Resource+CoreDataProperties.swift */,
+				6B3113822891B3D3004531D9 /* Question+CoreDataClass.swift */,
+				6B3113832891B3D3004531D9 /* Question+CoreDataProperties.swift */,
+				6B3113842891B3D3004531D9 /* PathName+CoreDataClass.swift */,
+				6B3113852891B3D3004531D9 /* PathName+CoreDataProperties.swift */,
+				6B3113862891B3D3004531D9 /* Goals+CoreDataClass.swift */,
+				6B3113872891B3D3004531D9 /* Goals+CoreDataProperties.swift */,
+				6B3113882891B3D3004531D9 /* Objectives+CoreDataClass.swift */,
+				6B3113892891B3D3004531D9 /* Objectives+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6B9987EC2891208200720EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +181,18 @@
 		6B9987F72891208200720EC6 /* MyLearningSpace */ = {
 			isa = PBXGroup;
 			children = (
+				6B31137528919633004531D9 /* Model */,
+				6B311353289148F4004531D9 /* Assesment */,
+				6B311352289148DE004531D9 /* Resources */,
+				6B311351289148D8004531D9 /* LGDetail */,
+				6B311350289148BF004531D9 /* LODetail */,
+				6B31134F289148B3004531D9 /* LearningSpace */,
+				6B31134E289148A9004531D9 /* StrandSelection */,
+				6B311347289147F5004531D9 /* PathProgress */,
 				6B9987F82891208200720EC6 /* MyLearningSpaceApp.swift */,
 				6B9987FA2891208200720EC6 /* ContentView.swift */,
+				6B99880628912C9100720EC6 /* LearningSpaceModel.xcdatamodeld */,
+				6B99880928912EC200720EC6 /* DataController.swift */,
 				6B9987FC2891208300720EC6 /* Assets.xcassets */,
 				6B9987FE2891208300720EC6 /* Preview Content */,
 			);
@@ -83,6 +223,10 @@
 			dependencies = (
 			);
 			name = MyLearningSpace;
+			packageProductDependencies = (
+				6B31136128914A23004531D9 /* HalfASheet */,
+				6B3113992893A2E2004531D9 /* WrappingHStack */,
+			);
 			productName = MyLearningSpace;
 			productReference = 6B9987F52891208200720EC6 /* MyLearningSpace.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +255,10 @@
 				Base,
 			);
 			mainGroup = 6B9987EC2891208200720EC6;
+			packageReferences = (
+				6B31136028914A23004531D9 /* XCRemoteSwiftPackageReference "HalfASheet" */,
+				6B3113982893A2E2004531D9 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 6B9987F62891208200720EC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +285,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B31135928914955004531D9 /* StrandSelectionRow.swift in Sources */,
+				6B31135B28914969004531D9 /* LearningSpaceView.swift in Sources */,
 				6B9987FB2891208200720EC6 /* ContentView.swift in Sources */,
+				6B31138C2891B3D3004531D9 /* Resource+CoreDataClass.swift in Sources */,
+				6B31135D2891498C004531D9 /* ResourcesView.swift in Sources */,
+				6B3113572891494A004531D9 /* StrandSelectionView.swift in Sources */,
+				6B31136428914ABD004531D9 /* LODetailSheetView.swift in Sources */,
+				6B99880A28912EC200720EC6 /* DataController.swift in Sources */,
+				6B31135528914914004531D9 /* PathProgressRow.swift in Sources */,
+				6B31138D2891B3D3004531D9 /* Resource+CoreDataProperties.swift in Sources */,
+				6B3113952891B3D3004531D9 /* Objectives+CoreDataProperties.swift in Sources */,
+				6B31138A2891B3D3004531D9 /* PathCategory+CoreDataClass.swift in Sources */,
+				6B31134D28914897004531D9 /* PathProgressItem.swift in Sources */,
+				6B31138B2891B3D3004531D9 /* PathCategory+CoreDataProperties.swift in Sources */,
+				6B3113902891B3D3004531D9 /* PathName+CoreDataClass.swift in Sources */,
+				6B3113912891B3D3004531D9 /* PathName+CoreDataProperties.swift in Sources */,
+				6B31135F2891499B004531D9 /* AssesmentView.swift in Sources */,
+				6B3113922891B3D3004531D9 /* Goals+CoreDataClass.swift in Sources */,
+				6B99880828912C9100720EC6 /* LearningSpaceModel.xcdatamodeld in Sources */,
 				6B9987F92891208200720EC6 /* MyLearningSpaceApp.swift in Sources */,
+				6B3113972892F33E004531D9 /* LGDetailSheetView.swift in Sources */,
+				6B3113942891B3D3004531D9 /* Objectives+CoreDataClass.swift in Sources */,
+				6B31138F2891B3D3004531D9 /* Question+CoreDataProperties.swift in Sources */,
+				6B31134B2891485B004531D9 /* PathProgressView.swift in Sources */,
+				6B3113932891B3D3004531D9 /* Goals+CoreDataProperties.swift in Sources */,
+				6B31138E2891B3D3004531D9 /* Question+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +511,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B31136028914A23004531D9 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		6B3113982893A2E2004531D9 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B31136128914A23004531D9 /* HalfASheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B31136028914A23004531D9 /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
+		6B3113992893A2E2004531D9 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B3113982893A2E2004531D9 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6B99880628912C9100720EC6 /* LearningSpaceModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B99880728912C9100720EC6 /* LearningSpaceModel.xcdatamodel */,
+			);
+			currentVersion = 6B99880728912C9100720EC6 /* LearningSpaceModel.xcdatamodel */;
+			path = LearningSpaceModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6B9987ED2891208200720EC6 /* Project object */;
 }
