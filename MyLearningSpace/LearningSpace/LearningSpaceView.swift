@@ -28,8 +28,8 @@ struct LearningSpaceView: View {
     
     var body: some View {
   
-        let numOfLoop = counts / 3
-        let remainder = counts % 3
+//        let numOfLoop = counts / 3
+//        let remainder = counts % 3
         
         ZStack {
             Image("MapBg")
@@ -37,7 +37,7 @@ struct LearningSpaceView: View {
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
             
-            VStack {
+            VStack (spacing: 20) {
                 
                 Image("SunUncleared").resizable()
                    .frame(width: 100, height: 100)
