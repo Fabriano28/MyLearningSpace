@@ -11,8 +11,13 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var pathName: FetchedResults<PathName>
     @FetchRequest(sortDescriptors: []) var pathCategory: FetchedResults<PathCategory>
-    
     @State private var answer = false
+    
+    init() {
+                let navBarAppearance = UINavigationBar.appearance()
+                navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(red: 1.00, green: 0.98, blue: 0.84, alpha: 1.00)]
+                navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(red: 1.00, green: 0.98, blue: 0.84, alpha: 1.00)]
+              }
     
     var body: some View {
         
@@ -27,8 +32,11 @@ struct ContentView: View {
                     NavigationLink(destination: StrandSelectionView(filter: "PN001"), isActive: $answer, label: {
                             Button(
                                 action: {answer.toggle()},
-                                label: {Text("Start Learning")}
-                            ).padding()
+                                label: {Text("Start Learning").foregroundColor(Color.init(uiColor: UIColor(red: 0.16, green: 0.15, blue: 0.31, alpha: 1.00)))}
+                                
+                            )
+                            .frame(width: 300, height: 50)
+                            .background(RoundedRectangle(cornerRadius: 10))
                         }
                     )
                     
@@ -42,13 +50,19 @@ struct ContentView: View {
                     
                     Button("Settings") {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }.padding()
+                    }
+                    .frame(width: 300, height: 50)
+                    .background(RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.init(uiColor: UIColor(red: 0.30, green: 0.30, blue: 0.49, alpha: 1.00)))
+                        )
                     Spacer()
                 }
             }.foregroundColor(Color.init(uiColor: UIColor(red: 1.00, green: 0.98, blue: 0.84, alpha: 1.00)))
             .navigationTitle("")
             .navigationBarHidden(true)
-        }.onAppear {
+        }
+        .navigationTitle("Home")
+        .onAppear {
             addPath()
         }
     }

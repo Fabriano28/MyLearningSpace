@@ -27,6 +27,8 @@ struct ResourcesView: View {
                 
                 ForEach(res){i in
                     Text("\(i.unwrapObjectiveID) - Remember")
+                        .fontWeight(.bold)
+                        .font(.system(size: 28))
                     VideoPlayer(player: AVPlayer(url:  URL(string: "https://drive.google.com/file/d/1j10pPy_kkuHHza5JE_n8qCnSYRMVInoP/view?usp=sharing")!))
                         .frame(height: 250)
                     Text(i.unwrapContent)
@@ -36,9 +38,10 @@ struct ResourcesView: View {
                         i.status1 = true
                     }
                     for i in cat {
-                        i.maxProgress = 5
-                        i.currProgress += 1
-                    }
+                        if i.currProgress <= 5.0 {
+                            i.currProgress += 1
+                        }
+                                            }
                 }
             }
             .frame(width: 350)

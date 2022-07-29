@@ -28,11 +28,12 @@ struct LODetailSheetView: View {
         
         ZStack {
             Color.init(uiColor: UIColor(red: 0.16, green: 0.15, blue: 0.31, alpha: 1.00)).ignoresSafeArea()
-            VStack{
+            VStack(spacing: 10){
                 
                 ForEach(objs){i in
                     Text(i.unwrapID)
                     Text(i.unwrapName)
+                        .fontWeight(.bold)
                     
                     VStack(alignment: .leading){
                         Text("Objectives")

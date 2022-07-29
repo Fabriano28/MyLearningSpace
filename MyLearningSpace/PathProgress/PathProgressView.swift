@@ -17,7 +17,10 @@ struct PathProgressView: View {
             
             RoundedRectangle(cornerRadius: 15).fill(Color.init(uiColor: UIColor(red: 0.30, green: 0.30, blue: 0.49, alpha: 1.00))).frame(width: 300, alignment: .center)
             VStack(spacing: 10){
-                Text("iOS Development Path").frame(width: 280, height: 30, alignment: .leading)
+                Text("iOS Development Path")
+                    .fontWeight(.bold)
+                    .font(.system(size: 24))
+                    .frame(width: 280, height: 30, alignment: .leading)
                 
                 List(pathCategory){pathItem in
                     PathProgressRow(name: pathItem.unwrapName, currProgress: pathItem.currProgress, maxProgress: pathItem.maxProgress)

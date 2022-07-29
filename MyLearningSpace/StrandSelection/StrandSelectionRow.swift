@@ -18,6 +18,8 @@ struct StrandSelectionRow: View {
             RoundedRectangle(cornerRadius: 15).fill(Color.init(uiColor: UIColor(red: 0.30, green: 0.30, blue: 0.49, alpha: 1.00)))
             VStack {
                 Text(catName + " Learning Objective")
+                    .fontWeight(.bold)
+                    .font(.system(size: 21))
                 Text(String(Int(catCurrProgress)) + " / " + String(Int(catMaxProgress)))
             }
         }
